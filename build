@@ -30,7 +30,7 @@ else
     adapterSrc="src/Lawnchair.js src/adaptors/LawnchairAdaptorHelpers.js";
     for arg in "$@"
     do
-        for file in $(find src/adaptors -iname $arg*)
+        for file in $(find src/adaptors -type f -iname $arg*)
         do
             echo "Adding adapter '$file' to lc_prod.js...";
             adapterSrc="$adapterSrc $file";
