@@ -22,6 +22,7 @@ A very light clientside JSON document store.
     blackberry ...... BlackBerry 4.7 and higher w/ PhoneGap. N/A ...........................
     couchdb ......... All .................................. All ........................... 
     server .......... All .................................. All ...........................
+    auto ............ All .................................. All ...........................
 
 INSTALL
 ===
@@ -36,7 +37,8 @@ Lawnchair does not assume how you want to use it. At a minimum will be required 
 - One of the adaptor js files can found in `./src/adaptors`.
 - Adobe AIR adaptor example xml config files can be found in `./util`.
 - CouchDB adaptor requires the http://localhost:5984/_utils/script/couch.js lib.
-- Server adapter requires a server-side API; see top of ServerAdaptor.js for more details.
+- Server adaptor requires a server-side API; see top of ServerAdaptor.js for more details.
+- Auto adaptor (actual filename is BeachfrontAdaptor) tries to detect and load other adaptor.
 
 Its probably a good idea to concat/minify the js you require (see below). Its a common request to 
 provide a single file that does some sort of feature detection which, in theory, is nice 

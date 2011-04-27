@@ -15,6 +15,7 @@ Lawnchair.prototype = {
 	
 	init:function(opts) {
 		var adaptors = {
+		  'auto': window.BeachfrontAdaptor,
 			'webkit':window.WebkitSQLiteAdaptor,
 			'gears':window.GearsSQLiteAdaptor,
 			'dom':window.DOMStorageAdaptor,
